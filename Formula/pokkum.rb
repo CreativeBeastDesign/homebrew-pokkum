@@ -5,21 +5,21 @@
 class Pokkum < Formula
   desc "Zero-dependency OCI container image compiler for SvelteKit applications"
   homepage "https://github.com/CreativeBeastDesign/pokkum"
-  version "1.0.6"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.0.6/pokkum_1.0.6_darwin_amd64.tar.gz"
-      sha256 "1b375186490eeffc5373e281f09db9bbeaa16d952900b63e303b555124edfae8"
+      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.1.0/pokkum_1.1.0_darwin_amd64.tar.gz"
+      sha256 "f0356b220671ab3f96f47fd2752c4e1fa69895d63b0b04f6c28ddefb93d0b254"
 
       define_method(:install) do
         bin.install "pokkum"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.0.6/pokkum_1.0.6_darwin_arm64.tar.gz"
-      sha256 "bf5478abae240f16298ec63f701e1396f4e819c36c00bdf82e82cbefa7397dac"
+      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.1.0/pokkum_1.1.0_darwin_arm64.tar.gz"
+      sha256 "9b5baa17dc53497c9fd951d9544fc261aa569877deeb088cfd872409d38ec325"
 
       define_method(:install) do
         bin.install "pokkum"
@@ -29,15 +29,15 @@ class Pokkum < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.0.6/pokkum_1.0.6_linux_amd64.tar.gz"
-      sha256 "f1fbad8ef9caa9a80ab0b90578545bfb681a5d67e0da3ea5a0369e1c20ac3a7a"
+      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.1.0/pokkum_1.1.0_linux_amd64.tar.gz"
+      sha256 "1cc515ed5ab76eca1403b41cbff7b2749ddf214c9ed7ee2050a12e71747203d6"
       define_method(:install) do
         bin.install "pokkum"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.0.6/pokkum_1.0.6_linux_arm64.tar.gz"
-      sha256 "bd28b262dfb771ccdc9ad702a1ecc16163332dd51cfd2595222f2294ca0f3d93"
+      url "https://github.com/CreativeBeastDesign/Pokkum/releases/download/v1.1.0/pokkum_1.1.0_linux_arm64.tar.gz"
+      sha256 "52963d5291935f35f5aa4791b4b8d03f7a0e1d491f71a22fef267dac152f3254"
       define_method(:install) do
         bin.install "pokkum"
       end
